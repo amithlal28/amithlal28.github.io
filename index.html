@@ -46,9 +46,9 @@
                         <span>Generative AI &amp; ML Engineer</span>
                     </h1>
                     <p class="hero-description">
-                        Generative AI Engineer focused on clean, secure code — designing and testing LLMs
-                        and prompts, building RAG systems end to end, and shipping production AI with the full
-                        Gen AI stack (Ollama, LangChain, vector DBs). AWS certified.
+                        Generative AI Engineer focused on clean, secure code — fine-tuning LLMs (LoRA/QLoRA),
+                        designing and testing prompts, building RAG systems end to end with evaluation (RAGAS),
+                        and shipping production AI with the full Gen AI stack (Ollama, LangChain, LangGraph, vector DBs). AWS certified.
                     </p>
                     <div class="hero-actions">
                         <a href="Amith-Lal-Resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
@@ -76,10 +76,10 @@
                             focused on clean, secure, and maintainable code.
                         </p>
                         <p>
-                            Hands-on in designing and testing LLMs and prompts and implementing RAG-based
-                            systems end to end — chunking, embedding generation, and vector search. Currently at
-                            <strong>Linx AS, Kochi</strong>, building production AI with the full Gen AI stack
-                            (local LLMs, vector DBs, LangChain, Ollama, n8n).
+                            Hands-on experience fine-tuning LLMs (LoRA/QLoRA), designing and testing prompts,
+                            and building RAG-based systems end to end — chunking, embedding generation, vector
+                            search, and evaluation (RAGAS). Currently at <strong>Linx AS, Kochi</strong>, building
+                            production AI with the full Gen AI stack (local LLMs, vector DBs, LangChain, LangGraph, Ollama, n8n).
                         </p>
                         <p>
                             AWS certified, with solid SQL and ML knowledge plus Git, CI/CD, code reviews, Docker,
@@ -119,19 +119,25 @@
                             <p class="exp-company">Linx AS, Kochi, India</p>
 
                             <h4 class="exp-project">Gen AI Document Processing &amp; Extraction Platform</h4>
-                            <p class="exp-project-tech">Python, Django, Ollama, LLMs, RAG</p>
+                            <p class="exp-project-tech">Python, Django, Ollama, LLMs, RAG, LangGraph</p>
                             <ul class="exp-details">
-                                <li>Developed a Django-based Generative AI application that leverages LangChain,
-                                    Ollama, and RAG to orchestrate local LLMs (Qwen, Mistral, Llama) for ingesting,
+                                <li>Developed Django-based Generative AI applications that leverage LangChain,
+                                    LangGraph, and RAG to orchestrate local LLMs (Qwen, Llama) for ingesting,
                                     analyzing, and extracting structured data from diverse documents.</li>
                                 <li>Implemented RAG-based pipelines end to end — document chunking, embedding
-                                    generation, and vector search (FAISS/ChromaDB) — enabling accurate Q&amp;A, AI
-                                    summaries, and targeted data extraction from uploaded files.</li>
+                                    generation, and vector search (Qdrant, ChromaDB) — enabling accurate Q&amp;A, AI
+                                    summaries, and targeted data extraction from uploaded files; evaluated retrieval
+                                    and generation quality using RAGAS (context precision, faithfulness, answer relevancy).</li>
+                                <li>Designed extraction outputs using structured output formatting (schema-constrained
+                                    JSON) to ensure consistent, machine-readable results suitable for direct integration
+                                    with downstream systems.</li>
                                 <li>Fine-tuned LLM models using LoRA and QLoRA techniques for improved domain
-                                    accuracy and reduced inference costs, alongside orchestrating AI agents via
-                                    LangChain, Ollama, and LlamaIndex.</li>
-                                <li>Designed and iteratively tested LLM prompts to improve extraction accuracy and
-                                    response reliability.</li>
+                                    accuracy and reduced inference costs, alongside orchestrating AI agents with
+                                    tool-calling workflows via LangChain, Ollama, and LangGraph.</li>
+                                <li>Configured and integrated MCP (Model Context Protocol) servers to extend RAG
+                                    system capabilities, enabling structured tool access for LLM agents; designed
+                                    and iteratively tested LLM prompts to improve extraction accuracy and response
+                                    reliability.</li>
                                 <li>Created and maintained robust RESTful API endpoints utilizing Django REST
                                     Framework and FastAPI for file uploads and extraction, owning system architecture
                                     and integrating directly with SAP systems.</li>
@@ -140,21 +146,16 @@
                             </ul>
 
                             <h4 class="exp-project">Albert Invent Data Migration &amp; Utility Development</h4>
-                            <p class="exp-project-tech">Python, Albert SDK, Pandas</p>
+                            <p class="exp-project-tech">Python, Albert SDK, Pandas, Streamlit</p>
                             <ul class="exp-details">
                                 <li>Executed complex data migration initiatives transferring critical R&amp;D data from
                                     diverse client legacy systems into the Albert Invent platform.</li>
                                 <li>Developed custom utility tools with Python and the Albert SDK to automate data
                                     extraction, validation, and loading; engineered efficient bulk-processing scripts
                                     ensuring high data integrity and minimal downtime.</li>
-                            </ul>
-
-                            <h4 class="exp-project">Predictive Color Mixing Platform</h4>
-                            <p class="exp-project-tech">Python, Machine Learning, Scikit-learn</p>
-                            <ul class="exp-details">
-                                <li>Engineered and deployed a predictive ML model using Scikit-learn to optimize
-                                    industrial color mixing, significantly improving formulation accuracy and
-                                    efficiency.</li>
+                                <li>Built a Streamlit-based internal application to streamline and monitor the data
+                                    migration workflow, providing a UI for validation checks and migration status
+                                    tracking.</li>
                             </ul>
                         </div>
                     </div>
@@ -290,7 +291,7 @@
                     <div class="skill-group">
                         <h3>Gen AI Stack</h3>
                         <div class="skill-tags">
-                            <span>Local LLMs (Qwen, Gemma, Llama)</span><span>Ollama</span><span>Vector DBs (FAISS, ChromaDB)</span><span>LangChain</span><span>n8n</span><span>RAG</span><span>Chunking</span><span>Embeddings</span><span>Vector Search</span><span>Prompt Design &amp; Testing</span><span>Agentic Workflows</span><span>Claude Code</span><span>MCP Servers</span>
+                            <span>Local LLMs (Qwen, Llama)</span><span>Ollama</span><span>Vector DBs (Qdrant, ChromaDB)</span><span>LangChain</span><span>LangGraph</span><span>n8n</span><span>RAG</span><span>RAGAS Evaluation</span><span>Chunking</span><span>Embeddings</span><span>Vector Search</span><span>Prompt Design &amp; Testing</span><span>Agentic Workflows</span><span>Claude Code</span><span>MCP Servers</span>
                         </div>
                     </div>
                     <div class="skill-group">
@@ -308,7 +309,7 @@
                     <div class="skill-group">
                         <h3>Backend &amp; APIs</h3>
                         <div class="skill-tags">
-                            <span>Django</span><span>Django REST Framework</span><span>FastAPI</span><span>RESTful APIs</span><span>API Design &amp; Maintenance</span><span>System Architecture</span><span>Firebase</span>
+                            <span>Django</span><span>Django REST Framework</span><span>FastAPI</span><span>RESTful APIs</span><span>API Design &amp; Maintenance</span><span>Streamlit</span><span>System Architecture</span><span>Firebase</span>
                         </div>
                     </div>
                     <div class="skill-group">
